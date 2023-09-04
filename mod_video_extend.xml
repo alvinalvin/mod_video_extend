@@ -22,45 +22,217 @@
 		<folder>tmpl</folder>
 		<folder>assets</folder>
 	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_video_extend.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_video_extend.ini</language>
+	</languages>
 	<config>
 		<fields name="params">
 
-		<fieldset name="basic">
-			  <field type="spacer" name="myspacerid" label="**ID video **"  />
-				<field name="id" type="text" default="id" label="ID" description=""/>
-				<field type="spacer" name="myspacer" label="**Text marker configuration**"  />
-				<field name="txto1" type="text" default="chapter 1" label="Marker 1" description=""/>
-				<field name="txto2" type="text" default="chapter 2" label="Marker 2" description=""/>
-				<field name="txto3" type="text" default="chapter 3" label="Marker 3" description=""/>
-				<field name="txto4" type="text" default="chapter 4" label="Marker 4" description=""/>
-				<!--*************** -->
-				<field type="spacer" name="myspacer1" label="**Time marker configuration**"  />
-				<field 	name="tiempo1" 	type="text" default="10" label="Time Marker 1"/>
-				<field name="tiempo2" 	type="text" 	default="12" label="Time Marker 2 " />
-				<field name="tiempo3" type="text" default="15" label="Time Marker 3 "/>
-				<field name="tiempo5" 	type="text" 	default="22" 	label="Time Marker 4 "/>
-				<!-- ********************************* -->
-				<field type="spacer" name="myspacer2" label="**Logo configuration**"  />
-				<field name="anchologo" type="text" default="60" label=" Width logo" description=""/>
-				<field name="largologo" type="text" default="40" label="Height logo" description=""/>
-				<field name="urllogo" type="url" default="https://andchir.github.io/jquery-video-extend/" label=" url logo" description="" size="4" />
-				<field type="imagelist" name="logo" label="Logo" directory="images" filter="\.mov$|\.mpg$|\.mp4$|\.ogv$|\.webm$|\.mts$|\.avi$|\.wmv$" />
+		  <fieldset name="basic">
+			  
+			        <field 
+					type="spacer" 
+					name="myspacerid" 
+					label="**ID video **" 
+				/>
+				
+			        <field 
+					name="id" 
+					type="text" 
+					default="id" 
+					label="ID" description=""
+				/>
+				
+			        <field 
+					type="spacer" 
+					name="myspacer" 
+					label="**Text marker configuration**"  
+				/>
+				
+			        <field 
+					name="txto1" 
+					type="text" 
+					default="chapter 1" 
+					label="Marker 1" 
+					description=""
+				/>
+				
+			        <field 
+					name="txto2" 
+					type="text" 
+					default="chapter 2" 
+					label="Marker 2" 
+					description=""
+				/>
+				
+			        <field 
+					name="txto3"
+					type="text" 
+					default="chapter 3"
+					label="Marker 3" 
+					description=""
+				/>
+				
+			        <field name="txto4" 
+					type="text" 
+					default="chapter 4" 
+					label="Marker 4" 
+					description=""
+				/>
+				
+			        <!--*************** -->
+				<field type="spacer"
+					name="myspacer1" 
+					label="**Time marker configuration**" 
+				/>
+				
+			        <field 	
+					name="tiempo1" 	
+					type="text" 
+					default="10" 
+					label="Time Marker 1"
+				/>
+				
+			        <field 
+					name="tiempo2" 	
+					type="text" 	
+					default="12" label="Time Marker 2 " 
+				/>
+				
+			        <field 
+					name="tiempo3" 
+					type="text" 
+					default="15" 
+					label="Time Marker 3 "
+				/>
+				
+			        <field name="tiempo5" 	
+					type="text" 	
+					default="22" 	
+					label="Time Marker 4 "
+				/>
+				
+			        <!-- ********************************* -->
+				
+			        <field type="spacer" 
+					name="myspacer2" 
+					label="**Logo configuration**"  
+				/>
+				
+			        <field 
+					name="anchologo" 
+					type="text" 
+					default="60" 
+					label=" Width logo" 
+					description=""
+				/>
+				
+			        <field name="largologo" 
+					type="text" 
+					default="40" 
+					label="Height 
+					logo" 
+					description=""
+				/>
+				
+			       <field name="urllogo" 
+					type="url" 
+					default="https://andchir.github.io/jquery-video-extend/" 
+					label=" url logo" 
+					description="" 
+					size="4" 
+				/>
+				
+			        <field 
+					type="imagelist" 
+					name="logo" 
+					label="Logo" 
+					directory="images" 
+					filter="\.mov$|\.mpg$|\.mp4$|\.ogv$|\.webm$|\.mts$|\.avi$|\.wmv$" 
+				/>
 				<!-- ************************************** -->
-				<field type="spacer" name="myspacer3" label="**Video configuration**"  />
-				<field type="filelist" name="video" label="Video filter" directory="images" filter="\.mov$|\.mpg$|\.mp4$|\.ogv$|\.webm$|\.mts$|\.avi$|\.wmv$" />
-        <field name="anchovideo" type="text" default="640" label="Width Video" description="" />
-				<field name="largovideo" type="text" default="360" label="Height Video" description="" />
-				<field name="poster" label="Poster" type="media" directory="stories"  />
-        <field name="Muted" type="radio" default="0" label="Muted" description="" class="btn-group btn-group-yesno"><option value="1">JYES</option><option value="0">JNO</option></field>
-				<field name="autoplay" type="radio" default="0" label="Autoplay" description="" class="btn-group btn-group-yesno"><option value="1">JYES</option><option value="0">JNO</option></field>
-				<field name="loop" type="radio" default="0" label="Loop" description="" class="btn-group btn-group-yesno"><option value="1">JYES</option><option value="0">JNO</option></field>
-				<field name="preload" type="radio" default="0" label="Preload" description="" class="btn-group btn-group-yesno"><option value="1">JYES</option><option value="0">JNO</option></field>
-</fieldset>
-<!-- formulario de configuraciones avanzadas  -->
-<!-- ***************************************** -->
-<!-- ******************************************* -->
-<!-- ******************************************** -->
-			<fieldset
+				<field 
+					type="spacer" 
+					name="myspacer3" 
+					label="**Video 
+					configuration**"  
+				/>
+				
+			       <field type="filelist"
+					name="video" 
+					label="Video 
+					filter" 
+					directory="images" 
+					filter="\.mov$|\.mpg$|\.mp4$|\.ogv$|\.webm$|\.mts$|\.avi$|\.wmv$" 
+				/>
+                                <field name="anchovideo" 
+					type="text" 
+					default="640" 
+					label="Width 
+					Video" description="" 
+				/>
+				
+			        <field name="largovideo" 
+					type="text" 
+					default="360" 
+					label="Height Video" 
+					description="" 
+				/>
+				<field 
+					name="poster" 
+					label="Poster" 
+					type="media" 
+					directory="stories"  
+				/>
+                                
+			        <field 
+					name="Muted" 
+					type="radio" 
+					default="0" 
+					label="Muted" 
+					description="" 
+					class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+			        <field 
+					name="autoplay" 
+					type="radio" 
+					default="0" 
+					label="Autoplay" 
+					description="" 
+					class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+			        <field 
+					name="loop" 
+					type="radio" 
+					default="0" 
+					label="Loop" 
+					description="" 
+					class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+			        <field 
+					name="preload" 
+					type="radio" 
+					default="0" 
+					label="Preload" 
+					description="" 
+					class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+                        </fieldset>
+                        <!-- formulario de configuraciones avanzadas  -->
+                        <fieldset
 				name="advanced">
 				<field
 					name="layout"
@@ -102,8 +274,5 @@
 			</fieldset>
 </fields>
 </config>
-	<languages folder="language">
-		<language tag="en-GB">en-GB/en-GB.mod_video_extend.sys.ini</language>
-		<language tag="en-GB">en-GB/en-GB.mod_video_extend.ini</language>
-	</languages>
+	
 </extension>
