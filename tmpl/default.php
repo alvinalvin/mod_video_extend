@@ -63,7 +63,6 @@ $ruta = JURI::base()."images"."/";
 <?php if ($video) {?>
    <source src="<?php echo $ruta.$video; ?>" type="video/mp4">
 <?php } ?>
-<?php echo $ruta; ?>
 </video>
 <!-- agregando jquery -->
 <?php
