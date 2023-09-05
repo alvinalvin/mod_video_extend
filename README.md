@@ -1,6 +1,6 @@
 # Mod_video_extend
 modulo para joomla basado en jquery que permite insertar un video mp4.
-# Caracerisicas
+# Caracterisicas
  
 - permite agregar un logo  
 - marcadores de tiempos
