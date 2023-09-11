@@ -163,7 +163,14 @@
 					label="Video mp4 path"
 
 				/>
-				<!-- video youtube -->
+				<field name="colorvideo"
+				type="color"
+				default="#000"
+				label="backgroundcolor video"
+	      description="color de fondo video"
+				/>
+
+        <!-- video youtube -->
 				<field
 					type="spacer"
 					name="myspaceridhh"
