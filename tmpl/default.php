@@ -5,29 +5,7 @@ defined('_JEXEC') or die;
 use Joomla\CMS\Factory;
 $doc = Factory::getDocument();
 JHtml::_('jquery.framework');
-//recibiendo parametros
-$txtmarker1  = $params->get("txto1");
-$txtmarker2  = $params->get("txto2");
-$txtmarker3  = $params->get("txto3");
-$txtmarker4  = $params->get("txto4");
-$widthvideo  = $params->get("anchovideo");
-$heightvideo = $params->get("largovideo");
-$widthlogo   = $params->get("anchologo");
-$heightlogo  = $params->get("largologo");
-$time1       = $params->get("tiempo1");
-$time2       = $params->get("tiempo2");
-$time3       = $params->get("tiempo3");
-$time5       = $params->get("tiempo5");
-$url         = $params->get("urllogo");
-$logo        = $params->get("logo");
-$video       = $params->get("video");
-$poster      = $params->get("poster");
-$muted       = $params->get("Muted");
-$autoplay    = $params->get("autoplay");
-$loop        = $params->get("loop");
-$preload     = $params->get("preload");
-$id          = $params->get("id");
-//validando  fields controles de videos
+//validando  fields controles de videos mp4
 $controls = "controls";
 
 if ($preload) {
@@ -56,6 +34,7 @@ if ($muted) {
 }
 $ruta = JURI::base()."images"."/";
 ?>
+
 <!-- video -->
 <video id="<?php echo $id; ?>" width="<?php echo $widthvideo; ?>" height="<?php echo $heightvideo; ?>"
 <?php echo $controls." ".$loopVideo." ".$autoplayVideo." ".$mutedVideo;?> <?php echo ""; ?>
@@ -63,15 +42,17 @@ $ruta = JURI::base()."images"."/";
 <?php if ($video) {?>
    <source src="<?php echo $ruta.$video; ?>" type="video/mp4">
 <?php } ?>
+<?php if ($video_youtube) {?>
+  <source src="<?php echo $video_youtube;?>" type="video/youtube">
+<?php } ?>
 </video>
 <!-- agregando jquery -->
 <?php
 $doc->addScriptDeclaration("
 $(document).ready(function(){
-
-            $('#$id').videoExtend({
+                $('#$id').videoExtend({
                 logo: '$ruta$logo',
-                logoLink: ' $url',
+                logoLink: '$url',
                 logoSize: [$widthlogo,$heightlogo ],
                 markers: [
                     {
