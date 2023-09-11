@@ -1,4 +1,3 @@
-
 <?php
 //linea de seguridad
 defined('_JEXEC') or die;
@@ -53,6 +52,7 @@ $(document).ready(function(){
                 $('#$id').videoExtend({
                 logo: '$ruta$logo',
                 logoLink: '$url',
+                backgroundColor: '$color',
                 logoSize: [$widthlogo,$heightlogo ],
                 markers: [
                     {
