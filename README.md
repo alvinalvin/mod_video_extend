@@ -6,3 +6,4 @@ modulo para joomla basado en jquery que permite insertar videos de youtube y mp4
 - marcadores de tiempos
 - video responsivo
 - permite agregar video mp4
+-  permite agregar video de youtube con un logo.
