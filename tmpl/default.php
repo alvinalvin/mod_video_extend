@@ -4,6 +4,30 @@ defined('_JEXEC') or die;
 use Joomla\CMS\Factory;
 $doc = Factory::getDocument();
 JHtml::_('jquery.framework');
+// validando logoPosition
+  $logoPosit    = "logoPosition: [";
+  $top          =  "210";
+  $coma         =    ",";
+  $right        =   "10";
+  $coma2        =    ",";
+  $comilla      =    "'";
+  $auto         = "auto";
+  $comilla2     =    "'";
+  $coma3        =    ",";
+  $comilla3     =    "'";
+  $auto2        = "auto";
+  $comilla4     =    "'";
+  $cierre       =   "],";
+  $logoPosition = $logoPosit.$top.$coma.$right.$coma2.$comilla .$auto.
+  $comilla2.$coma3.$comilla3.$auto2.$comilla4.$cierre;
+
+  if ($video_youtube) {
+    $logoPosition = $logoPosition;
+  }
+  else {
+    $logoPosition = "";
+  }
+
 //validando  fields controles de videos mp4
 $controls = "controls";
 
@@ -53,6 +77,7 @@ $(document).ready(function(){
                 logo: '$ruta$logo',
                 logoLink: '$url',
                 backgroundColor: '$color',
+                $logoPosition
                 logoSize: [$widthlogo,$heightlogo ],
                 markers: [
                     {
