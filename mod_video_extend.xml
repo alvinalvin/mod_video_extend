@@ -167,7 +167,7 @@
 				        type="color"
 				        default="#000"
 				        label="backgroundcolor video"
-	                                description="color de fondo video"
+	                                description=""
 				/>
 
                                 <!-- video youtube -->
