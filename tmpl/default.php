@@ -76,6 +76,7 @@ $(document).ready(function(){
                 $('#$id').videoExtend({
                 logo: '$ruta$logo',
                 logoLink: '$url',
+                logoAutoHide: true,
                 backgroundColor: '$color',
                 $logoPosition
                 logoSize: [$widthlogo,$heightlogo ],
