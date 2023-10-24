@@ -21,6 +21,17 @@ JHtml::_('jquery.framework');
   $logoPosition = $logoPosit.$top.$coma.$right.$coma2.$comilla .$auto.
   $comilla2.$coma3.$comilla3.$auto2.$comilla4.$cierre;
 
+  // logohide
+  if ($Logo_Hide ==0) {
+		$hide = "true";
+	}
+
+  if ($Logo_Hide ==1) {
+		$hide = "false";
+	}
+
+  // fin hide
+
   if ($video_youtube) {
     $logoPosition = $logoPosition;
   }
@@ -76,7 +87,7 @@ $(document).ready(function(){
                 $('#$id').videoExtend({
                 logo: '$ruta$logo',
                 logoLink: '$url',
-                logoAutoHide: true,
+                logoAutoHide: $hide,
                 backgroundColor: '$color',
                 $logoPosition
                 logoSize: [$widthlogo,$heightlogo ],

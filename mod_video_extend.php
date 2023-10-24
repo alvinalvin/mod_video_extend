@@ -31,6 +31,7 @@ $preload        =      $params->get("preload");
 $id             =           $params->get("id");
 $video_youtube  =   $params->get("urlyoutube");
 $color  =           $params->get("colorvideo");
+$Logo_Hide      =   $params->get("logohide");
 // Include jquery
 $doc->addScript(JURI::root()."modules/mod_video_extend/assets/js/jquery.video-extend.js");
 require JModuleHelper::getLayoutPath('mod_video_extend', $params->get('layout', 'default'));

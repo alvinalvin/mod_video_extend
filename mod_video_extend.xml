@@ -257,6 +257,11 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
+				<!-- campo logo hide -->
+				<field name="logohide" type="radio" default="0" label="Logo Hide mp4/youtube" description="">
+        <option value="0">true</option>
+        <option value="1">false</option>
+        </field>
 
                       </fieldset>
                                 <!-- formulario de configuraciones avanzadas  -->
